@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+connection: local
+  tasks:
+    - name: Create a test file
+    file:
+        path: /tmp/jenkins_ansible_tests.txt
+        state: touch
